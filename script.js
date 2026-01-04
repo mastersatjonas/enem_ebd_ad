@@ -318,7 +318,7 @@ function printCertificate() {
                             <p style="font-size: 13px; color: #1f2937; font-weight: 700; margin-bottom: 6px;">📚 Conteúdo da Avaliação:</p>
                             <div style="font-size: 11px; color: #4b5563; line-height: 1.5;">
                                 <div style="padding: 1px 0;"><strong>Lição 1:</strong> O Sentido Bíblico da Salvação</div>
-                                <div style="padding: 1px 0;"><strong>Revista:</strong> Jovens - 1º Trimestre 2025</div>
+                                <div style="padding: 1px 0;"><strong>Revista:</strong> Jovens - 1º Trimestre 2026</div>
                                 <div style="padding: 1px 0;"><strong>Total:</strong> 10 questões</div>
                             </div>
                         </div>
