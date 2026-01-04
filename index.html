@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCO NA EBD 2026 - AD Augustinópolis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- TELA INICIAL -->
+        <div id="startScreen" class="card">
+            <div class="header">
+                <div class="icon">📖</div>
+                <h1>FOCO NO ENEM Bíblico EBD 2026</h1>
+                <p class="subtitle">2026</p>
+                <div class="church-info">
+                    <p><strong>Igreja Assembleia de Deus - Missão</strong></p>
+                    <p>Augustinópolis - TO</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>📚 Conteúdo da Avaliação:</h3>
+                <p><strong>Lição 1:</strong> O Sentido Bíblico da Salvação</p>
+                <p><strong>Revista:</strong> Jovens - 1º Trimestre 2025</p>
+                <p><strong>Total:</strong> 10 questões</p>
+            </div>
+
+            <div class="instructions-box">
+                <h3>✍️ Instruções:</h3>
+                <p>✓ 10 questões de múltipla escolha (A, B, C ou D)</p>
+                <p>✓ Marque apenas uma opção por questão</p>
+                <p>✓ Você pode navegar entre as questões</p>
+                <p>✓ O tempo será cronometrado automaticamente</p>
+                <p>✓ Ao final, você verá seu desempenho e o gabarito</p>
+                <p>✓ <strong>🏆 Certificado digital disponível!</strong></p>
+            </div>
+
+            <div class="input-group">
+                <label for="userName">Digite seu nome completo:</label>
+                <input type="text" id="userName" placeholder="Ex: João da Silva Santos">
+            </div>
+
+            <button class="btn btn-primary" onclick="startExam()">Iniciar Prova</button>
+        </div>
+
+        <!-- TELA DA PROVA -->
+        <div id="examScreen" class="hidden">
+            <div class="exam-header">
+                <div class="exam-info">
+                    <span>⏱️ <span id="timer">00:00</span></span>
+                    <span><span id="answeredCount">0</span>/10 respondidas</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+                <p class="progress-text">Questão <span id="currentNum">1</span> de 10</p>
+            </div>
+
+            <div class="question-card">
+                <span class="question-badge" id="trimesterBadge">1º TRIMESTRE</span>
+                <p class="question-theme" id="questionTheme">Tema da questão</p>
+                <h2 class="question-text" id="questionText">Texto da questão aqui</h2>
+                <div class="options" id="optionsContainer"></div>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="previousQuestion()" id="prevBtn">
+                    ← Anterior
+                </button>
+                <button class="btn btn-primary" onclick="nextQuestion()" id="nextBtn">
+                    Próxima →
+                </button>
+                <button class="btn btn-success hidden" onclick="finishExam()" id="finishBtn">
+                    🏆 Finalizar
+                </button>
+            </div>
+        </div>
+
+        <!-- TELA DE RESULTADOS -->
+        <div id="resultsScreen" class="hidden">
+            <div class="card results-card">
+                <div class="header">
+                    <div class="icon">🏆</div>
+                    <h1>Prova Finalizada!</h1>
+                    <p id="studentName" class="student-name"></p>
+                    <p class="total-time">Tempo total: <span id="totalTime">00:00</span></p>
+                </div>
+
+                <div class="score-display">
+                    <div class="score-emoji" id="performanceEmoji">🎯</div>
+                    <div class="score-number"><span id="finalScore">0</span>/32</div>
+                    <p class="score-label">Acertos (<span id="percentage">0</span>%)</p>
+                    <p class="performance-msg" id="performanceMsg">Continue estudando!</p>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-certificate" onclick="generateCertificate()">
+                        📜 Baixar Certificado em PDF
+                    </button>
+                    <button class="btn btn-primary" onclick="restartExam()">
+                        🔄 Fazer Novamente
+                    </button>
+                </div>
+            </div>
+
+            <div class="card answer-key-card">
+                <h2 class="answer-key-title">🏆 Gabarito Oficial</h2>
+                <div id="answerKey"></div>
+            </div>
+
+            <div class="footer">
+                <p><strong>Igreja Assembleia de Deus - Missão</strong></p>
+                <p>Augustinópolis - TO</p>
+                <p style="margin-top: 8px; font-size: 0.8rem;">© 2025 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEMPLATE DO CERTIFICADO (OCULTO - NÃO RENDERIZA NA PÁGINA) -->
+    <div id="certificateTemplate" style="display: none !important; visibility: hidden !important; position: absolute !important; left: -99999px !important;">
+        <!-- Este template é usado apenas pelo JavaScript para gerar o PDF -->
+        <!-- Ele NUNCA deve aparecer na página -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
