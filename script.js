@@ -5,26 +5,147 @@
 
 // DADOS DAS QUESTÕES
 const questions = [
-    { id: 1, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "Biblicamente, o termo 'salvação' transmite a ideia de:", options: ["Desenvolvimento pessoal e autoestima", "Livramento, redenção e restauração do ser humano", "Apenas mudança de comportamento moral", "Recompensa por boas obras"], answer: 1 },
-    
-    { id: 2, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "A necessidade da salvação está diretamente relacionada ao fato de que:", options: ["O ser humano desconhece a Lei", "O mundo vive em constantes conflitos", "O pecado separou o homem de Deus", "A humanidade perdeu valores sociais"], answer: 2 },
-    
-    { id: 3, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "Segundo Romanos 5:12, o pecado entrou no mundo por meio de:", options: ["Todos os homens individualmente", "Satanás diretamente", "Adão, como representante da humanidade", "A desobediência coletiva de Israel"], answer: 2 },
-    
-    { id: 4, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "De acordo com a CPAD, a salvação é iniciativa exclusiva de:", options: ["Da igreja", "Do ser humano arrependido", "De Deus, por Sua graça", "Da obediência à Lei"], answer: 2 },
-    
-    { id: 5, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "No Antigo Testamento, a salvação está frequentemente ligada ao conceito de:", options: ["Prosperidade financeira", "Libertação e livramento concedidos por Deus", "Vida eterna claramente revelada", "Méritos pessoais"], answer: 1 },
-    
-    { id: 6, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "No Novo Testamento, a salvação se cumpre plenamente por meio de:", options: ["Boas obras", "Observância da Lei de Moisés", "Jesus Cristo", "Sacrifícios religiosos"], answer: 2 },
-    
-    { id: 7, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "Segundo João 14:6, Jesus afirma que Ele é:", options: ["Um dos caminhos para Deus", "Um grande mestre espiritual", "O único caminho, a verdade e a vida", "Um exemplo moral de salvação"], answer: 2 },
-    
-    { id: 8, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "Conforme Efésios 2:8-9, a salvação não vem das obras para que:", options: ["O homem não se sinta indigno", "A igreja seja exaltada", "Ninguém se glorie", "A Lei seja anulada"], answer: 2 },
-    
-    { id: 9, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "A salvação bíblica envolve, além do perdão dos pecados:", options: ["Apenas a esperança futura", "Transformação espiritual e nova vida em Cristo", "Apenas mudança exterior", "Recompensas materiais"], answer: 1 },
-    
-    { id: 10, trimester: "1º TRIMESTRE", theme: "Lição 1 - O Sentido Bíblico da Salvação", text: "De acordo com o ensino da CPAD, a salvação em Cristo produz no crente:", options: ["Isenção de sofrimento", "Vida perfeita neste mundo", "Reconciliação com Deus e santificação progressiva", "Garantia de sucesso terreno"], answer: 2 }
+    {
+        id: 1,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "Biblicamente, o pecado pode ser definido como:",
+        options: [
+            "Um erro social sem grandes consequências",
+            "A transgressão da Lei e da vontade de Deus",
+            "Um comportamento culturalmente aceitável",
+            "Uma falha apenas emocional"
+        ],
+        answer: 1
+    },
+
+    {
+        id: 2,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "Segundo Romanos 3:23, a condição de toda a humanidade é que:",
+        options: [
+            "Todos nasceram justos",
+            "Alguns são pecadores",
+            "Todos pecaram e carecem da glória de Deus",
+            "O pecado afeta apenas quem não crê"
+        ],
+        answer: 2
+    },
+
+    {
+        id: 3,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "O primeiro pecado da humanidade ocorreu quando:",
+        options: [
+            "Caim matou Abel",
+            "Adão e Eva desobedeceram a Deus no Éden",
+            "Israel rejeitou a Lei",
+            "Moisés quebrou as tábuas"
+        ],
+        answer: 1
+    },
+
+    {
+        id: 4,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "Uma das principais consequências do pecado, segundo a Bíblia, é:",
+        options: [
+            "Falta de prosperidade",
+            "Separação entre Deus e o homem",
+            "Dificuldades emocionais",
+            "Conflitos sociais apenas"
+        ],
+        answer: 1
+    },
+
+    {
+        id: 5,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "De acordo com Romanos 5:12, o pecado entrou no mundo por meio de:",
+        options: [
+            "Satanás diretamente",
+            "Todos os homens juntos",
+            "Adão, como representante da humanidade",
+            "A desobediência de Israel"
+        ],
+        answer: 2
+    },
+
+    {
+        id: 6,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "O pecado afetou o ser humano de tal forma que:",
+        options: [
+            "Ele perdeu totalmente a capacidade de escolher",
+            "Sua natureza foi corrompida",
+            "Ele deixou de ser responsável por seus atos",
+            "Ele se tornou incapaz de ouvir a Palavra"
+        ],
+        answer: 1
+    },
+
+    {
+        id: 7,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "Conforme Romanos 6:23, o salário do pecado é:",
+        options: [
+            "Sofrimento humano",
+            "Tristeza espiritual",
+            "A morte",
+            "A condenação imediata"
+        ],
+        answer: 2
+    },
+
+    {
+        id: 8,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "Segundo o ensino bíblico, a Lei de Deus:",
+        options: [
+            "Salva o homem do pecado",
+            "Anula o pecado",
+            "Revela o pecado, mas não pode salvá-lo",
+            "Substitui a graça"
+        ],
+        answer: 2
+    },
+
+    {
+        id: 9,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "O pecado não é apenas um ato isolado, mas também:",
+        options: [
+            "Uma fraqueza social",
+            "Um problema cultural",
+            "Uma condição espiritual do ser humano",
+            "Uma herança apenas histórica"
+        ],
+        answer: 2
+    },
+
+    {
+        id: 10,
+        trimester: "1º TRIMESTRE",
+        theme: "Lição 2 - O Problema do Pecado",
+        text: "O reconhecimento do problema do pecado é essencial porque:",
+        options: [
+            "Leva o homem à religião",
+            "Justifica as falhas humanas",
+            "Conduz à necessidade da salvação em Cristo",
+            "Elimina automaticamente a condenação"
+        ],
+        answer: 2
+    }
 ];
+
 // VARIÁVEIS GLOBAIS
 let currentQuestion = 0;
 let answers = {};
@@ -38,7 +159,7 @@ let finalTime = '';
 // INICIAR PROVA
 function startExam() {
     userName = document.getElementById('userName').value.trim();
-    
+
     if (!userName) {
         alert('Por favor, digite seu nome completo!');
         return;
@@ -46,10 +167,10 @@ function startExam() {
 
     document.getElementById('startScreen').classList.add('hidden');
     document.getElementById('examScreen').classList.remove('hidden');
-    
+
     startTime = Date.now();
     timerInterval = setInterval(updateTimer, 1000);
-    
+
     loadQuestion();
 }
 
@@ -65,30 +186,30 @@ function updateTimer() {
 // CARREGAR QUESTÃO
 function loadQuestion() {
     const q = questions[currentQuestion];
-    
+
     document.getElementById('trimesterBadge').textContent = q.trimester;
     document.getElementById('questionTheme').textContent = q.theme;
     document.getElementById('questionText').textContent = `${q.id}. ${q.text}`;
-    
+
     const optionsContainer = document.getElementById('optionsContainer');
     optionsContainer.innerHTML = '';
-    
+
     q.options.forEach((option, index) => {
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
         if (answers[currentQuestion] === index) {
             optionDiv.classList.add('selected');
         }
-        
+
         optionDiv.innerHTML = `
             <span class="option-letter">${String.fromCharCode(65 + index)})</span>
             <span class="option-text">${option}</span>
         `;
-        
+
         optionDiv.onclick = () => selectOption(index);
         optionsContainer.appendChild(optionDiv);
     });
-    
+
     updateProgress();
     updateButtons();
 }
@@ -112,9 +233,9 @@ function updateButtons() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const finishBtn = document.getElementById('finishBtn');
-    
+
     prevBtn.disabled = currentQuestion === 0;
-    
+
     if (currentQuestion === questions.length - 1) {
         nextBtn.classList.add('hidden');
         finishBtn.classList.remove('hidden');
@@ -144,10 +265,10 @@ function previousQuestion() {
 function finishExam() {
     clearInterval(timerInterval);
     finalTime = document.getElementById('timer').textContent;
-    
+
     document.getElementById('examScreen').classList.add('hidden');
     document.getElementById('resultsScreen').classList.remove('hidden');
-    
+
     showResults();
 }
 
@@ -159,27 +280,27 @@ function showResults() {
             correct++;
         }
     });
-    
+
     finalScore = correct;
     finalPercentage = ((correct / questions.length) * 100).toFixed(1);
-    
+
     document.getElementById('studentName').textContent = userName;
     document.getElementById('totalTime').textContent = finalTime;
     document.getElementById('finalScore').textContent = correct;
     document.getElementById('percentage').textContent = finalPercentage;
-    
+
     const performanceData = getPerformanceMessage(correct);
     document.getElementById('performanceEmoji').textContent = performanceData.emoji;
     document.getElementById('performanceMsg').textContent = performanceData.text;
     document.getElementById('performanceMsg').className = `performance-msg ${performanceData.class}`;
-    
+
     generateAnswerKey();
 }
 
 // MENSAGEM DE DESEMPENHO
 function getPerformanceMessage(score) {
     const percentage = (score / questions.length) * 100;
-    
+
     if (percentage >= 90) {
         return { emoji: '🏆', text: 'Excelente! Você domina o conteúdo das revistas!', class: 'excellent' };
     } else if (percentage >= 70) {
@@ -195,15 +316,15 @@ function getPerformanceMessage(score) {
 function generateAnswerKey() {
     const answerKey = document.getElementById('answerKey');
     answerKey.innerHTML = '';
-    
+
     questions.forEach((q, idx) => {
         const userAnswer = answers[idx];
         const isCorrect = userAnswer === q.answer;
         const answered = userAnswer !== undefined;
-        
+
         const itemDiv = document.createElement('div');
         itemDiv.className = `answer-item ${isCorrect ? 'correct' : answered ? 'incorrect' : 'unanswered'}`;
-        
+
         let icon = '';
         if (isCorrect) {
             icon = '✅';
@@ -212,20 +333,20 @@ function generateAnswerKey() {
         } else {
             icon = '⚪';
         }
-        
+
         let content = `
             <span class="answer-icon">${icon}</span>
             <p class="answer-trimester">${q.trimester} - ${q.theme}</p>
             <p class="answer-question"><strong>${q.id}. ${q.text}</strong></p>
             <p class="correct-answer"><strong>✓ Resposta correta:</strong> ${String.fromCharCode(65 + q.answer)}) ${q.options[q.answer]}</p>
         `;
-        
+
         if (!isCorrect && answered) {
             content += `<p class="user-answer"><strong>✗ Sua resposta:</strong> ${String.fromCharCode(65 + userAnswer)}) ${q.options[userAnswer]}</p>`;
         } else if (!answered) {
             content += `<p class="not-answered">Não respondida</p>`;
         }
-        
+
         itemDiv.innerHTML = content;
         answerKey.appendChild(itemDiv);
     });
@@ -244,7 +365,7 @@ function generateCertificate() {
 // ================================================
 function printCertificate() {
     const today = new Date().toLocaleDateString('pt-BR');
-    
+
     // Criar HTML do certificado COMPACTO (1 página)
     const certificateHTML = `
         <!DOCTYPE html>
@@ -296,7 +417,7 @@ function printCertificate() {
                             
                             <p style="font-size: 14px; color: #4b5563; margin: 4px 0;">concluiu com êxito o</p>
                             
-                            <h3 style="font-size: 24px; margin: 8px 0; color: #2563eb; letter-spacing: 2px;">1 LIÇÃO BÍBLICA EBD 2026</h3>
+                            <h3 style="font-size: 24px; margin: 8px 0; color: #2563eb; letter-spacing: 2px;">2 LIÇÃO BÍBLICA EBD 2026</h3>
                             
                             <p style="font-size: 13px; color: #6b7280; margin: 4px 0; font-style: italic;">EDIÇÃO JOVENS - Escola Bíblica Dominical</p>
                         </div>
@@ -304,7 +425,7 @@ function printCertificate() {
                         <!-- Detalhes COMPACTOS -->
                         <table style="max-width: 500px; margin: 10px auto; background: #f9fafb; padding: 12px; border-radius: 8px; border: 2px solid #e5e7eb; border-collapse: collapse;">
                             <tr>
-                                <td style="font-size: 12px; color: #4b5563; padding: 3px;"><strong style="color: #1f2937;">Pontuação:</strong> ${finalScore}/32</td>
+                                <td style="font-size: 12px; color: #4b5563; padding: 3px;"><strong style="color: #1f2937;">Pontuação:</strong> ${finalScore}/10</td>
                                 <td style="font-size: 12px; color: #4b5563; padding: 3px;"><strong style="color: #1f2937;">Aproveitamento:</strong> ${finalPercentage}%</td>
                             </tr>
                             <tr>
@@ -317,7 +438,7 @@ function printCertificate() {
                         <div style="max-width: 600px; margin: 10px auto; text-align: left;">
                             <p style="font-size: 13px; color: #1f2937; font-weight: 700; margin-bottom: 6px;">📚 Conteúdo da Avaliação:</p>
                             <div style="font-size: 11px; color: #4b5563; line-height: 1.5;">
-                                <div style="padding: 1px 0;"><strong>Lição 1:</strong> O Sentido Bíblico da Salvação</div>
+                                <div style="padding: 1px 0;"><strong>Lição 2:</strong> O Problema do Pecado</div>
                                 <div style="padding: 1px 0;"><strong>Revista:</strong> Jovens - 1º Trimestre 2026</div>
                                 <div style="padding: 1px 0;"><strong>Total:</strong> 10 questões</div>
                             </div>
@@ -368,7 +489,7 @@ function printCertificate() {
         </body>
         </html>
     `;
-    
+
     // Abrir em nova janela
     const printWindow = window.open('', '_blank', 'width=1200,height=800');
     if (printWindow) {
@@ -388,7 +509,7 @@ function restartExam() {
     finalScore = 0;
     finalPercentage = 0;
     finalTime = '';
-    
+
     document.getElementById('resultsScreen').classList.add('hidden');
     document.getElementById('startScreen').classList.remove('hidden');
     document.getElementById('userName').value = '';
